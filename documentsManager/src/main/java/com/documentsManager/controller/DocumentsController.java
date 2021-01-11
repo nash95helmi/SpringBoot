@@ -27,16 +27,16 @@ public class DocumentsController {
 	
 	@RequestMapping(value = "/upload", method = RequestMethod.POST)
 	public Documents addNewApplication(@RequestBody Documents documents) {
-		System.out.println("Testing for branching");
-		System.out.println("Testing for branching");
-		System.out.println("Testing for branching");
-		System.out.println("Testing for branching");
-		System.out.println("Testing for branching");
 		return documentsRepository.save(documents);
 	}
 	
 	@GetMapping(value = "/download/id/{id}")
 	public Optional<Documents> download(@PathVariable String id){
+		System.out.println("Testing for branching");
+		System.out.println("Testing for branching");
+		System.out.println("Testing for branching");
+		System.out.println("Testing for branching");
+		System.out.println("Testing for branching");
 		return documentsRepository.findById(id);
 	}
 	
