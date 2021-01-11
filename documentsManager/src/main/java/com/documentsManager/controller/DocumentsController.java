@@ -41,11 +41,6 @@ public class DocumentsController {
 	
 	@RequestMapping(value = "/delete/id/{id}", method = RequestMethod.DELETE)
 	public void deleteDoc(@PathVariable String id) {
-		System.out.println("Testing for branching");
-		System.out.println("Testing for branching");
-		System.out.println("Testing for branching");
-		System.out.println("Testing for branching");
-		System.out.println("Testing for branching");
 		documentsRepository.deleteById(id);
 	}
 }
