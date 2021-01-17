@@ -7,6 +7,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class DocumentsManagerApplication {
 
 	public static void main(String[] args) {
+		System.out.println("Test hihihi");
+		System.out.println("Test hihihi");
+		System.out.println("Test hihihi");
+		System.out.println("Test hihihi");
 		SpringApplication.run(DocumentsManagerApplication.class, args);
 	}
 

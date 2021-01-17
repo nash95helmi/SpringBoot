@@ -1,0 +1,21 @@
+version: "3"
+services:
+  manager-jdbc:
+    image: manager-jdbc
+    ports:
+      - "8083:8083"
+    networks:
+      - manager-mysql
+    depends_on:
+      - mysqldb
+ 
+  mysqldb:
+    image: mysql:8
+    networks:
+      - manager-mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=test  
+
+networks:
+  manager-mysql: 

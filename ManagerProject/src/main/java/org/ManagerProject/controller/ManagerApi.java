@@ -20,4 +20,9 @@ public class ManagerApi extends RestClient{
 	public Iterable<Manager> findAll(){
 		return managerService.findAll();
 	}
+	
+	@RequestMapping("/helloDocker")
+	public String helloDocker() {
+		return "Hello Docker";
+	}
 }
