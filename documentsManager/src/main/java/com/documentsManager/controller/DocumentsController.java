@@ -27,6 +27,10 @@ public class DocumentsController {
 	
 	@RequestMapping(value = "/upload", method = RequestMethod.POST)
 	public Documents addNewApplication(@RequestBody Documents documents) {
+		System.out.println("dududud");
+		System.out.println("dududud");
+		System.out.println("dududud");
+		System.out.println("dududud");
 		return documentsRepository.save(documents);
 	}
 	
