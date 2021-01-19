@@ -28,6 +28,7 @@ public class KafkaConfiguration {
 	
 	@Bean
 	public KafkaTemplate<String, User> kafkaTemplate(){
+		System.out.println("jkokokoko");
 		return new KafkaTemplate<String, User>(producerFactory());
 	}
 }
